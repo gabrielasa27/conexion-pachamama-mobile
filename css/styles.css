@@ -109,7 +109,15 @@ a { color: inherit; }
   font-weight: 700;
 }
 
-.hero img { width: 100%; }
+.hero img,
+.hero__video {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  background: #1c2a4a;
+}
 
 .hero__top,
 .hero__bottom {
@@ -518,6 +526,23 @@ a { color: inherit; }
 /* Los títulos no se cortan con guiones */
 h1, h2, h3, .sidemenu, .topnav { hyphens: manual; -webkit-hyphens: manual; }
 
+/* ---------- Video del equipo ---------- */
+.team__video {
+  width: 72%;
+  margin: calc(var(--u) * 16) auto calc(var(--u) * 6);
+  background: #000;
+  border: calc(var(--u) * 3) solid var(--gris-banda);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, .25);
+}
+
+.team__video video {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 478 / 850;
+  background: #000;
+}
+
 /* ---------- Footer con video ---------- */
 .footer {
   position: relative;
@@ -548,6 +573,25 @@ h1, h2, h3, .sidemenu, .topnav { hyphens: manual; -webkit-hyphens: manual; }
   width: 100%;
   aspect-ratio: 16 / 9;
   background: #000;
+}
+
+.footer__photo {
+  margin: calc(var(--u) * 16) 0 0;
+}
+
+.footer__photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: calc(var(--u) * 3) solid var(--gris-banda);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, .35);
+}
+
+.footer__photo figcaption {
+  font-family: var(--f-lato);
+  font-size: calc(var(--u) * 10);
+  margin-top: calc(var(--u) * 5);
+  opacity: .9;
 }
 
 .footer__tag {

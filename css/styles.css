@@ -526,23 +526,6 @@ a { color: inherit; }
 /* Los títulos no se cortan con guiones */
 h1, h2, h3, .sidemenu, .topnav { hyphens: manual; -webkit-hyphens: manual; }
 
-/* ---------- Video del equipo ---------- */
-.team__video {
-  width: 72%;
-  margin: calc(var(--u) * 16) auto calc(var(--u) * 6);
-  background: #000;
-  border: calc(var(--u) * 3) solid var(--gris-banda);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, .25);
-}
-
-.team__video video {
-  display: block;
-  width: 100%;
-  height: auto;
-  aspect-ratio: 478 / 850;
-  background: #000;
-}
-
 /* ---------- Footer con video ---------- */
 .footer {
   position: relative;
